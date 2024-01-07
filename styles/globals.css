@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.imgStyle {
+  position :fixed;
+  inset: 0px;
+  opacity: 0.3;
+  background-size: 30px;
+  background-image: url(https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F8997f779f33b430bb22ca667d1b73ade);
+}
+
+body {
+  margin-top: 3em;
+  background-color: rgb(0, 0, 0);
+}
+
+.color-bg {
+  color: #d4d4d4;
+  transition: color 0.5s ease-in-out; /* Smooth transition for color changes */
+  animation-name: colorBgAnimation;
+  animation-duration: 5s; /* Total animation duration, including the delay */
+  animation-delay: 3s; /* Delay before the animation starts */
+  animation-iteration-count: infinite; /* Infinite loop */
+}
+
+@keyframes colorBgAnimation {
+  0% {
+    background-color: #d4d4d4;
+  }
+  25% {
+    background-color: #fca5a5;
+  }
+  50% {
+    background-color: #fde047;
+  }
+  75% {
+    background-color: #fca5a5;
+  }
+  100% {
+    background-color: #d4d4d4;
+  } 
+}
+
+.color-change {
+  color: #d4d4d4;
+  transition: color 0.5s ease-in-out; /* Smooth transition for color changes */
+
+  animation-name: colorChangeAnimation;
+  animation-duration: 5s; /* Total animation duration, including the delay */
+  animation-delay: 3s; /* Delay before the animation starts */
+  animation-iteration-count: infinite; /* Infinite loop */
+}
+
+@keyframes colorChangeAnimation {
+  0% {
+    color: #d4d4d4;
+  }
+  25% {
+    color: #fca5a5;
+  }
+  50% {
+    color: #fde047;
+  }
+  75% {
+    color: #fca5a5;
+  }
+  100% {
+    color: #d4d4d4;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.up {
+  min-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.up-up {
+  display: flex;
+  align-items: center;
+}
+
+.set-img {
+  height: 100px;
+  margin: 0px 20px;
+}
+
+h1 {
+  color: whitesmoke ;
+  font-size: 80px;
+  font-weight: 900;
+}
+
+.up-down {
+  text-align: center;
+}
+
+.down {
+  text-align: center;
+}
+
+#container-2 {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+}
+
+#container-3 {
+  margin-top: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 100%;
+  flex-direction: column;
+}
+
+#container-4 {
+  text-align: center;
+  height: 80px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.timer {
+  display: flex;
+}
+
+.timer div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px 8px;
+}
+
+.timer div span {
+  color: #ffffff;
+  font-size: 2em;
+  font-weight:600;
+}
+
+.timer div p {
+  font-size: 8px;
+}
+
+.text-one {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+
+.btn {
+  color: black;
+  padding: 1rem 1.5rem;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    height: 400px;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  .up {
+    flex-direction:column;
+  }
+}
